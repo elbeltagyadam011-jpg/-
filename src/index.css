@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Cairo', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #f8faf9;
+  }
+
+  .dark body {
+    background-color: #0b1313;
+  }
+
+  h1, h2, h3, .font-arabic-title {
+    font-family: 'Reem Kufi', 'Cairo', sans-serif;
+  }
+
+  .font-quran {
+    font-family: 'Scheherazade New', 'Amiri', serif;
+  }
+
+  .font-amiri {
+    font-family: 'Amiri', serif;
+  }
+}
+
+/* Islamic Geometric Pattern Background overlay */
+.bg-islamic-pattern {
+  background-image: radial-gradient(rgba(16, 185, 129, 0.08) 1px, transparent 1px),
+                    radial-gradient(rgba(245, 158, 11, 0.06) 1px, transparent 1px);
+  background-position: 0 0, 10px 10px;
+  background-size: 20px 20px;
+}
+
+.dark .bg-islamic-pattern {
+  background-image: radial-gradient(rgba(16, 185, 129, 0.12) 1px, transparent 1px),
+                    radial-gradient(rgba(245, 158, 11, 0.08) 1px, transparent 1px);
+}
+
+/* Islamic Gold & Emerald Shimmer Effects */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #d97706 0%, #f59e0b 50%, #fbbf24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark .gold-gradient-text {
+  background: linear-gradient(135deg, #fbbf24 0%, #fef08a 50%, #f59e0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.emerald-gold-border {
+  border-image: linear-gradient(135deg, rgba(16, 185, 129, 0.3), rgba(245, 158, 11, 0.3)) 1;
+}
+
+/* Glassmorphism Card Style */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.dark .glass-card {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Custom Scrollbar for sleek aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.5);
+}
+
+/* Ensure smooth tap highlight on touch devices */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+

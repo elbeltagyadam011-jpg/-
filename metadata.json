@@ -1,0 +1,6 @@
+{
+  "name": "تدبر",
+  "description": "تطبيق تدبر للقرآن الكريم - عرض الـ 114 سورة مع تفاصيل ونظرة عامة وأسباب النزول والدروس والقصص والتفاسير",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
